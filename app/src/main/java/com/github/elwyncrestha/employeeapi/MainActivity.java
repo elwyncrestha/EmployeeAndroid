@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                             "Id: " + employee.getId() +
                             "Name: " + employee.getName() +
                             "Salary: " + employee.getSalary() +
-                            "Age: " + employee.getSalary() +
+                            "Age: " + employee.getAge() +
                             "\n";
                     tvOutput.append(string);
                 });
