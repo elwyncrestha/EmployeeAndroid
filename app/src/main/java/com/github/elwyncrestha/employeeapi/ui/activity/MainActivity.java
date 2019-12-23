@@ -1,4 +1,4 @@
-package com.github.elwyncrestha.employeeapi;
+package com.github.elwyncrestha.employeeapi.ui.activity;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -7,6 +7,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.github.elwyncrestha.employeeapi.R;
 import com.github.elwyncrestha.employeeapi.api.EmployeeApi;
 import com.github.elwyncrestha.employeeapi.model.Employee;
 

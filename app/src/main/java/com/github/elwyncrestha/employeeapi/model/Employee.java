@@ -1,5 +1,7 @@
 package com.github.elwyncrestha.employeeapi.model;
 
+import androidx.annotation.Nullable;
+
 import com.google.gson.annotations.SerializedName;
 
 import lombok.AllArgsConstructor;
@@ -12,15 +14,16 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Employee {
-    private long id;
+    @Nullable
+    private Long id;
 
-    @SerializedName(value = "employee_name")
+    @SerializedName(value = "name", alternate = {"employee_name"})
     private String name;
 
-    @SerializedName(value = "employee_salary")
+    @SerializedName(value = "salary", alternate = {"employee_salary"})
     private float salary;
 
-    @SerializedName(value = "employee_age")
+    @SerializedName(value = "age", alternate = {"employee_age"})
     private int age;
 
     @SerializedName(value = "profile_image")
